@@ -1,5 +1,4 @@
-dev-server.js
-test_endpoints.js
 .git
 .gitignore
 README.md
+test_endpoints.js

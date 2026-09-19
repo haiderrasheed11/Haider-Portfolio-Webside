@@ -1,4 +1,9 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "functions": {
+    "index.js": {
+      "includeFiles": "{css/**,js/**,images/**,*.html}"
+    }
+  }
 }
