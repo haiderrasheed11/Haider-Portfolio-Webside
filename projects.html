@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore selected AI workflows, LLM agents, and full-stack software engineering case studies by Haider Rasheed, AI Software Engineer." />
+  <title>Projects & Case Studies — Haider Rasheed | AI Software Engineer</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header" id="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">HR</div>
+        <span>Haider Rasheed</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Hire Me ⚡</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 60px;">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-title-wrap" style="margin-bottom: 40px;">
+          <span class="section-subtitle">Work Archive</span>
+          <h1 class="section-title">Featured <span class="gradient-text">Projects & Case Studies</span></h1>
+          <p class="section-desc">
+            Explore detailed architectures, challenges solved, and production metrics across full-stack web and AI systems.
+          </p>
+        </div>
+
+        <!-- Interactive Filters & Live Search Bar -->
+        <div class="projects-filter-bar">
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Projects</button>
+            <button class="filter-tab" data-filter="ai">AI & ML</button>
+            <button class="filter-tab" data-filter="web">Web & FinTech</button>
+            <button class="filter-tab" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-tab" data-filter="uiux">UI/UX Systems</button>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input 
+              type="text" 
+              id="project-search" 
+              class="search-input" 
+              placeholder="Search by tech or keyword..." 
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="catalog-projects-grid">
+          <!-- Rendered dynamically by js/main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Need a Tailored Custom Solution for Your Company?</h2>
+          <p>
+            From greenfield architecture to full production release, I build software that scales reliably.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Let's Talk About Your Project ⚡
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-badge">HR</div>
+            <span>Haider Rasheed</span>
+          </div>
+          <p>
+            AI Software Engineer dedicated to engineering intelligent, resilient, and high-impact digital solutions.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Case Studies</h4>
+          <ul class="footer-links">
+            <li><a href="project-detail.html?id=ai-saas-platform" class="footer-link">NeuroFlow AI</a></li>
+            <li><a href="project-detail.html?id=apex-ecommerce-hub" class="footer-link">Apex Luxury Store</a></li>
+            <li><a href="project-detail.html?id=fintech-crypto-dashboard" class="footer-link">NovaPay FinTech</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary);">Email:</span> <a href="mailto:haiderrasheed284@gmail.com" class="footer-link">haiderrasheed284@gmail.com</a></li>
+            <li><span style="color: var(--text-secondary);">Availability:</span> <span style="color: var(--accent-emerald);">● Open for Work</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024 Haider Rasheed. All Rights Reserved.</div>
+        <div>Built with Clean HTML5, CSS3 & JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
