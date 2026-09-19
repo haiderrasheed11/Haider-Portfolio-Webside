@@ -46,11 +46,12 @@ function initNavbar() {
     });
   }
 
-  // Active Link Highlighter based on current path
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  // Active Link Highlighter based on current path (supports clean URLs and .html)
+  const pathPart = window.location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
   document.querySelectorAll(".nav-link").forEach(link => {
-    const href = link.getAttribute("href");
-    if (href === currentPath || (currentPath === "" && href === "index.html")) {
+    const rawHref = link.getAttribute("href") || "";
+    const hrefClean = rawHref.split("/").pop().replace(/\.html$/, "") || "index";
+    if (hrefClean === pathPart) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");

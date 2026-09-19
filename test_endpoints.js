@@ -3,9 +3,12 @@ const http = require('http');
 const endpoints = [
   '/',
   '/index.html',
+  '/about',
   '/about.html',
+  '/projects',
   '/projects.html',
   '/project-detail.html?id=apex-ecommerce-hub',
+  '/contact',
   '/contact.html',
   '/css/style.css',
   '/js/data.js',

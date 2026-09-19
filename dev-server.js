@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = __dirname;
 
 const MIME_TYPES = {
@@ -21,7 +21,6 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  // Parse URL to ignore query strings in path resolution
   const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
   let pathname = parsedUrl.pathname;
   
@@ -29,7 +28,12 @@ const server = http.createServer((req, res) => {
     pathname = '/index.html';
   }
 
-  const filePath = path.join(PUBLIC_DIR, pathname);
+  let filePath = path.join(PUBLIC_DIR, pathname);
+
+  // If path doesn't have an extension, try appending .html for clean URLs
+  if (!path.extname(filePath) && fs.existsSync(`${filePath}.html`)) {
+    filePath = `${filePath}.html`;
+  }
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
